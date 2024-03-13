@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_api_rest/api/authentication_api.dart';
 import 'package:flutter_api_rest/data/authentication_client.dart';
-import 'package:flutter_api_rest/pages/home.dart';
+import 'package:flutter_api_rest/pages/home_page.dart';
 import 'package:flutter_api_rest/utils/dialogs.dart';
 import 'package:flutter_api_rest/utils/responsive.dart';
 import 'package:flutter_api_rest/widgets/input_text.dart';

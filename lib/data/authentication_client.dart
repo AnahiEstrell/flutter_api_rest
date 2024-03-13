@@ -53,7 +53,7 @@ class AuthenticationClient {
 
       Logs.p.i("session life time ${expiredIn - diff}");
 
-      if (expiredIn - diff >= 3550) {
+      if (expiredIn - diff >= 60) {
         _complete();
         return session.token;
       }

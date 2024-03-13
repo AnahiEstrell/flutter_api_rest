@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart'; // Importa el paquete Dio para realizar solicitudes HTTP
 import 'package:flutter/material.dart';
 import 'package:flutter_api_rest/data/authentication_client.dart';
-import 'package:flutter_api_rest/pages/home.dart';
-import 'package:flutter_api_rest/pages/home_pages.dart';
+import 'package:flutter_api_rest/pages/home_page.dart';
+import 'package:flutter_api_rest/pages/login_page.dart';
 import 'package:flutter_api_rest/utils/utils.dart';
 import 'package:get_it/get_it.dart';
 
@@ -41,7 +41,7 @@ class _SplashPageState extends State<SplashPage> {
       Navigator.pushReplacementNamed(
           // ignore: use_build_context_synchronously
           context,
-          HomePage.routeName); // Navega a la página de inicio.
+          LoginPage.routeName); // Navega a la página de inicio.
       return;
     }
     // ignore: use_build_context_synchronously

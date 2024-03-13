@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_api_rest/helpers/dependency_injection.dart';
-import 'package:flutter_api_rest/pages/home.dart';
-import 'package:flutter_api_rest/pages/home_pages.dart';
+import 'package:flutter_api_rest/pages/home_page.dart';
+import 'package:flutter_api_rest/pages/login_page.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_api_rest/pages/register_pages.dart';
 import 'package:flutter_api_rest/pages/splash_pages.dart';
@@ -40,8 +40,8 @@ class MyApp extends StatelessWidget {
         // Define las rutas de la aplicación.
         RegisterPage.routeName: (_) =>
             const RegisterPage(), // Ruta para la página de registro.
-        HomePage.routeName: (_) =>
-            const HomePage(), // Ruta para la página de inicio.
+        LoginPage.routeName: (_) =>
+            const LoginPage(), // Ruta para la página de inicio.
         Home.routeName: (_) => const Home() // Ruta para la página de inicio.
       },
     );

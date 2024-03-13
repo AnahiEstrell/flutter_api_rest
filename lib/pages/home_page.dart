@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_api_rest/api/account_api.dart';
 import 'package:flutter_api_rest/data/authentication_client.dart';
 import 'package:flutter_api_rest/models/user.dart';
-import 'package:flutter_api_rest/pages/home_pages.dart';
+import 'package:flutter_api_rest/pages/login_page.dart';
 import 'package:get_it/get_it.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:path/path.dart' as path;
@@ -58,7 +58,7 @@ class _HomeState extends State<Home> {
       // Navega a la página de inicio y elimina todas las rutas anteriores.
       // ignore: use_build_context_synchronously
       context,
-      MaterialPageRoute(builder: (context) => const HomePage()),
+      MaterialPageRoute(builder: (context) => const LoginPage()),
       (Route<dynamic> route) => false,
     );
   }
